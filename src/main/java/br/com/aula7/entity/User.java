@@ -1,4 +1,4 @@
-package br.com.aula8.entity;
+package br.com.aula7.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

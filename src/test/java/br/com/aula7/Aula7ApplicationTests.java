@@ -1,4 +1,4 @@
-package br.com.aula8;
+package br.com.aula7;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

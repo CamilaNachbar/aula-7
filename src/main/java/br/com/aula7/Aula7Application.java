@@ -1,4 +1,4 @@
-package br.com.aula8;
+package br.com.aula7;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
