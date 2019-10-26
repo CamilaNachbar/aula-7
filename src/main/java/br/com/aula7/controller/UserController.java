@@ -13,9 +13,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.aula7.entity.User;
 import br.com.aula7.repository.UserRepository;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @RestController
 @CrossOrigin
+@Api(value = "usuario")
+
 @RequestMapping("usuario")
 public class UserController {
 
@@ -34,6 +38,7 @@ public class UserController {
 
 	}
 
+	  @ApiOperation(value = "Criar um novo usuario")
 	@PostMapping("/salvar")
 	public ResponseEntity<?> salvar(@RequestBody User usuario) {
 		usuario.setPassword(new BCryptPasswordEncoder().encode(usuario.getPassword()));
